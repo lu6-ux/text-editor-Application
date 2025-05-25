@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Text Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h2>Online Text Editor</h2>
+
+  <div class="toolbar">
+    <button onclick="formatText('bold')"><b>B</b></button>
+    <button onclick="formatText('italic')"><i>I</i></button>
+    <button onclick="formatText('underline')"><u>U</u></button>
+
+    <input type="color" id="colorPicker" onchange="changeColor()" title="Font Color"/>
+
+    <select onchange="alignText(this.value)">
+      <option value="Left">Left</option>
+      <option value="Center">Center</option>
+      <option value="Right">Right</option>
+      <option value="Full">Justify</option>
+    </select>
+
+    <button onclick="undoAction()">Undo</button>
+    <button onclick="redoAction()">Redo</button>
+  </div>
+
+  <div id="editor" contenteditable="true">
+    Type your paragraph.....
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
