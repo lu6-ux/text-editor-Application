@@ -1,19 +1,11 @@
-function formatText(command) {
+function format(command) {
   document.execCommand(command, false, null);
-  document.getElementById("editor").focus();
- }
-function changeColor() {
-  const color = document.getElementById("colorPicker").value;
-  document.execCommand("styleWithCSS", false, true);
+}
+
+function changeColor(color) {
   document.execCommand("foreColor", false, color);
-  document.getElementById("editor").focus();
 }
 
-function alignText(alignment) {
-  document.execCommand("justify" + alignment); 
-  document.getElementById("editor").focus();
-}
-
-function undoAction() {
-  document.execCommand("undo", false, null);
+function alignText(direction) {
+  document.getElementById("editor").style.textAlign = direction;
 }
