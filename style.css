@@ -1,45 +1,14 @@
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #f8f9fa;
+  font-family: Arial;
+  margin: 20px;
 }
 
 .toolbar {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-  padding: 10px;
-  background-color: #ffffff;
-  border: 1px solid #220ddd;
-  border-radius: 5px;
-}
-
-.toolbar button,
-.toolbar select,
-.toolbar input[type="color"] {
-  padding: 8px 12px;
-  font-size: 16px;
-  border: 1px solid #e81c1c;
-  background-color: #f1f1f1;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.toolbar button:hover,
-.toolbar select:hover,
-.toolbar input[type="color"]:hover {
-  background-color: #f9f3f3;
+  margin-bottom: 10px;
 }
 
 #editor {
-  border: 1px solid #a09191;
+  border: 1px solid #ccc;
   min-height: 300px;
-  padding: 15px;
-  background-color: #928a8a;
-  border-radius: 5px;
-  outline: none;
-  line-height: 1.6;
-  font-size: 16px;
+  padding: 10px;
 }
