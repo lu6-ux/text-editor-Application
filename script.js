@@ -9,3 +9,11 @@ function changeColor(color) {
 function alignText(direction) {
   document.getElementById("editor").style.textAlign = direction;
 }
+
+function undoAction() {
+  document.execCommand("undo");
+}
+
+function redoAction() {
+  document.execCommand("redo");
+}
