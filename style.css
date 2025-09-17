@@ -1,14 +1,29 @@
 body {
-  font-family: Arial;
+  font-family: sans-serif;
   margin: 20px;
+  background: #f0f4f3;
 }
 
 .toolbar {
+  background-color: #d0f0e0;
+  padding: 10px;
+  border-radius: 8px;
   margin-bottom: 10px;
 }
 
+.toolbar button, .toolbar select, .toolbar input[type="color"] {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 #editor {
-  border: 1px solid #ccc;
   min-height: 300px;
+  border: 1px solid #ccc;
   padding: 10px;
+  background: #fff;
+  border-radius: 8px;
 }
