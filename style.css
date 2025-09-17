@@ -1,29 +1,54 @@
+/* Overall page styling */
 body {
-  font-family: sans-serif;
-  margin: 20px;
-  background: #f0f4f3;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #e0f7f4, #dfeff0);
 }
 
+/* Toolbar styling */
 .toolbar {
-  background-color: #d0f0e0;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  background-color: #a8e6cf;
+  padding: 12px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.toolbar button, .toolbar select, .toolbar input[type="color"] {
-  margin-right: 5px;
-  padding: 5px 10px;
+/* Button styling */
+.toolbar button,
+.toolbar input[type="color"],
+.toolbar select {
+  background-color: #ffffff;
   border: none;
-  background: #fff;
-  border-radius: 4px;
+  padding: 8px 12px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 
+.toolbar button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Editor area */
 #editor {
-  min-height: 300px;
+  background-color: #ffffff;
   border: 1px solid #ccc;
-  padding: 10px;
-  background: #fff;
-  border-radius: 8px;
+  border-top: none;
+  min-height: 300px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  color: #333;
+}
+
+/* Placeholder simulation */
+#editor:empty::before {
+  content: "Start typing here...";
+  color: #aaa;
 }
